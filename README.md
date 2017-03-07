@@ -26,4 +26,21 @@ mv composer.phar /usr/local/bin/composer
 ```
 
 -- Install Dependencies
+```
 composer install
+```
+
+-- Migrations
+
+Create a database with name lemsdb, if not present.
+
+```
+create database lemsdb;
+```
+
+Run migrations, 
+--- for ion_auth
+
+```
+run `/application/sql/ion_auth.sql` for ion_auth migrations, (user tables, etc)
+```
